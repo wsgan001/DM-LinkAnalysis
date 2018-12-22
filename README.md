@@ -324,9 +324,7 @@ $ python main.py [-h] [-f FILE]
       - 以 authority 來說， Node761 被 Node7, 8, 9, 25, 50, 59, 62, 78, 79, 81, 91, 134, 140, 169, 171, 180, 185, 187, 194, 202, 250, 266, 267, 300, 309, 312, 336, 382, 386, 397, 441, 449, 459, 462, 499, 501, 506, 540, 552, 580, 581, 593, 606, 641, 659, 662, 739, 755, 803, 815, 835, 857, 863, 896, 905, 914, 929, 930, 944, 996, 1019, 1071, 1113, 1131, 1150, 1157, 1199, 1227 推薦，排名前10名 hub 的 Node 都有推薦到 Node761 ，因此相較了其他節點， Node761 拿到了最高的 authority ，至於那些完全沒有被其他節點推薦的節點其 authority 值都為 0 。
 
   - Graph7
-    ::: info
-    本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以單向連接到下一個 item，由於總節點數為 7030 ，總邊數為 8487 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph7.txt`。
-    :::
+    > 本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以單向連接到下一個 item，由於總節點數為 7030 ，總邊數為 8487 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph7.txt`。
     
     - Hub
 
@@ -384,9 +382,7 @@ $ python main.py [-h] [-f FILE]
       - 以 authority 來說， Node67992 被 Node53991, 58531, 64308, 63977, 50609, 55424 推薦，排名前6名 hub 的 Node 除了第5名的 Node81578 以外，都推薦到 Node67992 ，因此相較了其他節點， Node67992 拿到了最高的 authority ，至於那些完全沒有被其他節點推薦的節點其 authority 值都為 0 。
 
   - Graph8
-    ::: info
-    本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以雙向連接到下一個 item，由於總節點數為 7030 ，總邊數為 16974 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph8.txt`。
-    :::
+    > 本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以雙向連接到下一個 item，由於總節點數為 7030 ，總邊數為 16974 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph8.txt`。
     
     - Hub
 
@@ -586,9 +582,7 @@ $ python main.py [-h] [-f FILE]
       - 觀察 graph6 圖， Node410 被 Node1 (out-degree = 26), 36 (out-degree = 25), 41 (out-degree = 29), 68 (out-degree = 29), 95 (out-degree = 31), 135 (out-degree = 27), 191 (out-degree = 26), 209 (out-degree = 27), 220 (out-degree = 27), 254 (out-degree = 29), 273 (out-degree = 29), 290 (out-degree = 29), 324 (out-degree = 26), 331 (out-degree = 31), 361 (out-degree = 22), 387 (out-degree = 31), 421 (out-degree = 22), 497 (out-degree = 28), 554 (out-degree = 26), 559 (out-degree = 28), 578 (out-degree = 25), 648 (out-degree = 27), 689 (out-degree = 23), 695 (out-degree = 28), 748 (out-degree = 28), 765 (out-degree = 28), 848 (out-degree = 27), 872 (out-degree = 29), 897 (out-degree = 28), 946 (out-degree = 29), 955 (out-degree = 26), 1058 (out-degree = 30), 1084 (out-degree = 25), 1134 (out-degree = 20), 1139 (out-degree = 28), 1143 (out-degree = 26), 1163 (out-degree = 28) 連接，以這圖形來說，扣除 out-degree 為 0 的 Node ，平均每個 Node 之 out-degree 為 27.91444 ，又平均每個 Node 之 in-degree 為 4.25081 ，按照 Node410 被連接的狀況，in-degree 高於平均值甚多，且其父親節點的分支數接近於平均值，因此 Node410 在 PageRank 表現上勝過其他節點。
 
   - Graph7
-    ::: info
-    本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以單向連接到下一個 item，由於總節點數為 7030 ，總邊數為 8487 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph7.txt`。
-    :::
+    > 本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以單向連接到下一個 item，由於總節點數為 7030 ，總邊數為 8487 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph7.txt`。
 
     - PageRank
 
@@ -620,9 +614,7 @@ $ python main.py [-h] [-f FILE]
       - Node97823 被 Node90065 (out-degree = 2), 94109 (out-degree = 1) 連接，因此 Node97823 完全承接了 Node94109 (PageRank 第9名) 及一半 Node90065  (PageRank 第4名) 的 PageRank，因此 Node97823 在 PageRank 上的表現勝過其他節點。
 
   - Graph8
-    ::: info
-    本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以雙向連接到下一個 item，由於總節點數為 7030 ，總邊數為 16974 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph8.txt`。
-    :::
+    > 本資料的構成是由 project1 之 IBM dataset 構成，將每個 transaction 的各個 item 以雙向連接到下一個 item，由於總節點數為 7030 ，總邊數為 16974 無法使用圖形呈現，詳細 graph 詳見`hw3dataset/graph8.txt`。
     
     - PageRank
 
@@ -869,9 +861,7 @@ $ python main.py [-h] [-f FILE]
       - 而由 C = 0.8 的數據中我們可以看到有些非零的 SimRank 不再是 1 了，主要是在於遞迴深度使得 SimRank 在繼承父節點配對時產生了衰減，而 SimRank 愈接近 0 者，表示這兩兩配對的節點要找到相關性，必須通過好幾曾的遞迴才能找到共同的父節點。
 
   - Graph5
-    ::: info
-    由於配對數量過多 (約 11 萬種配對)，因此詳細 SimRank 放在`result/simrank_5_c10.txt` 及 `result/simrank_5_c08.txt` 。
-    :::
+    > 由於配對數量過多 (約 11 萬種配對)，因此詳細 SimRank 放在`result/simrank_5_c10.txt` 及 `result/simrank_5_c08.txt` 。
     
     - Discussion
       - 由結果可以發現，SimRank 分佈開始有很多配對為 0 ，這可能說明著這個 graph 連接的結構沒有辦法讓 SimRank 傳遞到每種配對上，如果把這些 SimRank 為 0 的配對再多個幾條指進來的 edge，應該是會有效的提升 SimRank ，因為這配對可以再透過這些額外連進來的 edge 來去讓其他的父節點配對傳遞非 0 的 SimRank 回來，這樣一來原本為 0 的配對就不會為 0 了。
@@ -1026,19 +1016,17 @@ $ python main.py [-h] [-f FILE]
     - 實驗結果 Node1 之 PageRank 原為 0.32334 ，提升為 0.97425 。
 
 ## Performance Analysis
-:::info
-以下 graph 皆為 `ggen.py` 產生。
-  ``` bash
-  $ python ggen.py -v <NUM_VERTICES> -e <NUM_EDGES> -o <FILENAME>
-  ```
-:::
+> 以下 graph 皆為 `ggen.py` 產生。
+>   ``` bash
+>   $ python ggen.py -v <NUM_VERTICES> -e <NUM_EDGES> -o <FILENAME>
+>   ```
   
 - HITS
   - 固定節點數為 10,000
     - 隨著邊數增加，所需時間如下表
-      ![](https://i.imgur.com/Av9XUu3.png)
+      <br> ![](https://i.imgur.com/Av9XUu3.png)
       
-      ![](https://i.imgur.com/OSzuMCU.png)
+      <br> ![](https://i.imgur.com/OSzuMCU.png)
       
       | # of edges  | time      | iteration |
       | ---:        | ---       | ---:      |
@@ -1053,9 +1041,9 @@ $ python main.py [-h] [-f FILE]
       
   - 固定邊數為 10,000
     - 隨著節點數增加，所需時間如下表
-      ![](https://i.imgur.com/TqZ36qH.png)
+      <br> ![](https://i.imgur.com/TqZ36qH.png)
       
-      ![](https://i.imgur.com/odumt7q.png)
+      <br> ![](https://i.imgur.com/odumt7q.png)
 
       | # of vertices | time      | iteration |
       | ---:          | ---       | ---:      |
@@ -1073,9 +1061,9 @@ $ python main.py [-h] [-f FILE]
 - PageRank
   - 固定節點數為 10,000
     - 隨著邊數增加，所需時間如下表
-      ![](https://i.imgur.com/Sa85mIu.png)
+      <br> ![](https://i.imgur.com/Sa85mIu.png)
       
-      ![](https://i.imgur.com/V9ap6lB.png)
+      <br> ![](https://i.imgur.com/V9ap6lB.png)
 
 
       | # of edges  | time      | iteration |
@@ -1091,9 +1079,9 @@ $ python main.py [-h] [-f FILE]
       
   - 固定邊數為 10,000
     - 隨著節點數增加，所需時間如下表
-      ![](https://i.imgur.com/PiGK1HH.png)
+      <br> ![](https://i.imgur.com/PiGK1HH.png)
 
-      ![](https://i.imgur.com/yFdZpmu.png)
+      <br> ![](https://i.imgur.com/yFdZpmu.png)
 
       | # of vertices | time      | iteration |
       | ---:          | ---       | ---:      |
@@ -1111,9 +1099,9 @@ $ python main.py [-h] [-f FILE]
 - SimRank
   - 固定節點數為 10,000
     - 隨著邊數增加，所需時間如下表
-      ![](https://i.imgur.com/TX71kYA.png)
+      <br> ![](https://i.imgur.com/TX71kYA.png)
 
-      ![](https://i.imgur.com/Q50F5wX.png)
+      <br> ![](https://i.imgur.com/Q50F5wX.png)
 
       | # of edges  | time (TLE: > 60 min) | iteration |
       | ---:        | ---                  | ---:      |
@@ -1125,9 +1113,9 @@ $ python main.py [-h] [-f FILE]
 
   - 固定邊數為 100
     - 隨著節點數增加，所需時間如下表
-      ![](https://i.imgur.com/UnxnK0D.png)
+      <br> ![](https://i.imgur.com/UnxnK0D.png)
 
-      ![](https://i.imgur.com/H9RS6T0.png)
+      <br> ![](https://i.imgur.com/H9RS6T0.png)
 
       | # of vertices | time       | iteration |
       | ---:          | ---        | ---:      |
