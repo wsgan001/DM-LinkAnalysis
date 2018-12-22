@@ -1143,7 +1143,7 @@ $ python main.py [-h] [-f FILE]
   - **What is the effect of “C” parameter in SimRank?**
     - 承如前面的 result 呈現，在兩兩配對的節點計算 SimRank 時，會因為兩節點想透過遞迴去找尋到相同的父節點，但每通過一層的遞迴所繼承而來的 SimRank 都會被 C 值所折減，因此隨著 C 值的設定愈接近 0 的話，兩兩不同的節點互相配對其 SimRank 值必定會愈接近 0 ，而 C 值愈接近 1 的話，兩兩不同的節點互相配對，在追溯到共同父節點時，其繼承的 SimRank 將不會有折減。
   - **Design a new link-based similarity measurement**
-    - 或許我們可以考慮以**共同父節點接近程度**來衡量點跟點之間的相似度；為了實現前述目的，我們使用 Floyd-Warshall Algorithm 找出每兩兩配對的節點最短距離，因此我們就能夠知道節點距離關係，然而我們根據節點 i 到達節點 j 的最短距離 $d_{ij}$，訂出向量 $V_i = [e_{i0}, e_{i1}, ... , e_{ij}, ...]$ 其中 $e_{ij} = C^{d_{ij}}$ (C 為 0~1 之間的數)，而這個向量意味著節點 i 到 j 接近的程度，接著我們把這向量正規化，最後如果要計算 a 與 b 點的 similarity 我們可以把正規化後的 Va 及 Vb 進行內積運算，便可知道**共同父節點接近程度**。
+    - 或許我們可以考慮以**共同父節點接近程度**來衡量點跟點之間的相似度；為了實現前述目的，我們使用 Floyd-Warshall Algorithm 找出每兩兩配對的節點最短距離，因此我們就能夠知道節點距離關係，然而我們根據節點 i 到達節點 j 的最短距離 ![](https://latex.codecogs.com/svg.latex?d_{ij})，訂出向量 ![](https://latex.codecogs.com/svg.latex?V_i=[e_{i0},e_{i1},...,e_{ij},...]) 其中 $e_{ij} = C^{d_{ij}}$ (C 為 0~1 之間的數)，而這個向量意味著節點 i 到 j 接近的程度，接著我們把這向量正規化，最後如果要計算 a 與 b 點的 similarity 我們可以把正規化後的 Va 及 Vb 進行內積運算，便可知道**共同父節點接近程度**。
     - 前述方法已實作在 `main.py` ，以下展示原本方法與上述方法對於 `graph_4.txt` 的差異。
 
       | Pairs  | SimRank (C=0.8) | NewSimRank (C=0.2) |
