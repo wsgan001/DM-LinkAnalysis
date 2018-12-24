@@ -1177,6 +1177,8 @@ $ python main.py [-h] [-f FILE]
       | (6, 7) | 0.2701          | 0.0927             |
       | (7, 7) | 1.0000          | 1.0000             |
 
+  - **What you learned from this project and your comments about this project**
+    - 雖然我們實作出來的演算法計算速度遠遠不足實際上搜尋引擎的要求，但由這個 project 我們還是能瞭解到搜尋引擎的運作原理，以及可能透過一些手段提升這些演算法分析出來的 rank ，因此我們在搜尋引擎所找到的網站也未必是真正重要的，或許這些網站只是用了某些手段提升了 rank 使得搜尋引擎比較推薦而已。
 
 ## Authors
 [Yu-Tong Shen](https://github.com/yutongshen/)

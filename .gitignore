@@ -9,7 +9,7 @@
 # private
 private/
 venv/
-.tmp/
+tmp/
 *.zip
 
 # ipython
